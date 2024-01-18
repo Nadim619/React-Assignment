@@ -1,0 +1,55 @@
+import React from 'react';
+
+function CourseList(props) {
+  const { courses } = props;
+
+  return (
+    
+
+      {courses.map(course => (
+        
+
+          
+{course.name}
+
+          
+{course.description}
+
+
+          
+Instructor: {course.instructor}
+
+
+          
+Duration: {course.duration}
+
+
+          
+Enrollment Status: {course.enrollmentStatus}
+
+
+          
+Schedule: {course.schedule}
+
+
+          
+Location: {course.location}
+
+
+          
+Pre-requisites: {course.preRequisites}
+
+
+          
+Syllabus: {course.syllabus}
+
+
+        
+
+      ))}
+    
+
+  );
+}
+
+export default CourseList;
